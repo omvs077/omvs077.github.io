@@ -1,74 +1,91 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy &mdash; ClipManager</title>
-  <meta name="description" content="ClipManager privacy policy: what it stores, where, and how you control it.">
-  <link rel="stylesheet" href="../../../style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ClipManager Privacy Policy — Dvvyom Labs</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
+<style>
+  :root{
+    --bg:#f7f8fb; --surface:#ffffff; --text:#12172b; --muted:#5b6478;
+    --accent:#2b52d6; --border:#e6e9f2;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0d1120; --surface:#161b30; --text:#f2f4fb; --muted:#9aa2bd;
+      --accent:#6f8bff; --border:#262c48;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;
+    padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); line-height:1.65;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:0 24px;}
+  header{padding:28px 0; display:flex; align-items:center; justify-content:space-between;}
+  .back{color:var(--muted); text-decoration:none; font-size:14px;}
+  .back:hover{color:var(--text);}
+  h1{font-size:26px; margin:8px 0 4px;}
+  .updated{color:var(--muted); font-size:13px; margin:0 0 36px;}
+  h2{font-size:17px; margin:36px 0 10px;}
+  p, li{color:var(--muted); font-size:14.5px;}
+  ul{padding-left:20px; margin:0;}
+  li{margin-bottom:6px;}
+  .callout{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px 20px; margin-top:8px;}
+  .callout p{color:var(--text); margin:0; font-size:14.5px;}
+  footer{border-top:1px solid var(--border); margin-top:56px; padding:28px 0 40px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;}
+  footer span, footer a{color:var(--muted); font-size:13px; text-decoration:none;}
+  footer a:hover{color:var(--text);}
+</style>
 </head>
 <body>
+  <div class="wrap">
+    <header>
+      <a class="back" href="/apps/clipmanager/">← ClipManager</a>
+      <nav><a class="back" href="/">Dvvyom Labs</a></nav>
+    </header>
 
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/">Dvvyom<span class="dot">.</span>Labs</a>
-      <nav class="site-nav">
-        <a href="../">ClipManager</a>
-        <a href="../support/">Support</a>
-      </nav>
+    <h1>Privacy Policy</h1>
+    <p class="updated">ClipManager · Last updated: September 2026</p>
+
+    <div class="callout">
+      <p>ClipManager stores everything entirely on your own device. It does not send your clipboard data, or any other data, anywhere.</p>
     </div>
-  </header>
 
-  <section class="tight">
-    <div class="wrap">
-      <h1>Privacy Policy</h1>
-      <p class="dim">Last updated: September 2026</p>
+    <h2>What ClipManager stores</h2>
+    <ul>
+      <li>Your clipboard history (text, links, colors, emails, file paths) — saved locally at <code>%APPDATA%\ClipManager\history.txt</code></li>
+      <li>Thumbnails/copies of images you copy, saved locally alongside your history</li>
+      <li>Your app settings (history limit, hotkeys, appearance, etc.) — saved locally at <code>%APPDATA%\ClipManager\settings.txt</code></li>
+    </ul>
 
-      <p>ClipManager is built to work entirely on your own machine. This page explains exactly what that means.</p>
+    <h2>What ClipManager does not do</h2>
+    <ul>
+      <li>No network connection of any kind — ClipManager works fully offline</li>
+      <li>No account or sign-in required</li>
+      <li>No analytics, telemetry, or crash reporting sent off-device</li>
+      <li>No data is shared with, or sold to, any third party — there isn't a server to share it with</li>
+    </ul>
 
-      <h2>What ClipManager stores</h2>
-      <p>ClipManager keeps a history of what you copy on your Windows PC: text, images, and references to files or folders you copy in File Explorer. This can include anything on your clipboard, so treat it the same way you'd treat your clipboard itself &mdash; it may contain sensitive information depending on what you copy.</p>
+    <h2>Your controls</h2>
+    <ul>
+      <li>Exclude password managers from clipboard capture, in Settings → Privacy</li>
+      <li>Pause monitoring at any time from the tray icon</li>
+      <li>Set history to clear automatically on exit</li>
+      <li>Delete individual clips, or clear your entire history, at any time from the popup</li>
+    </ul>
 
-      <h2>Where it's stored</h2>
-      <p>Everything is saved locally, in <code>%APPDATA%\ClipManager\</code> on your own device: your clip history, saved images, and your settings. Nothing is uploaded, synced, or transmitted anywhere. ClipManager makes no network requests, has no account or sign-in, and includes no analytics or telemetry.</p>
+    <h2>Uninstalling</h2>
+    <p>Uninstalling ClipManager removes the app. To also remove your stored history and settings, delete the <code>%APPDATA%\ClipManager</code> folder.</p>
 
-      <h2>Password managers</h2>
-      <p>By default, ClipManager skips saving anything copied while a recognized password manager is the active window. You can turn this off in Settings, though we'd recommend leaving it on.</p>
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:dvvyomlabs19@zohomail.in">dvvyomlabs19@zohomail.in</a></p>
 
-      <h2>Your controls</h2>
-      <p>From Settings, you can:</p>
-      <div class="row-list">
-        <div class="row"><div style="width:34px;"></div><div>Clear your entire history at any time</div></div>
-        <div class="row"><div style="width:34px;"></div><div>Pause clipboard monitoring</div></div>
-        <div class="row"><div style="width:34px;"></div><div>Turn off image or file capture</div></div>
-        <div class="row"><div style="width:34px;"></div><div>Set history to auto-delete after a number of days</div></div>
-        <div class="row"><div style="width:34px;"></div><div>Clear history automatically whenever ClipManager exits</div></div>
-      </div>
-
-      <h2>Uninstalling</h2>
-      <p>If you installed ClipManager from the Microsoft Store, uninstalling removes the app and its local data together. If you used the standalone installer, your data in <code>%APPDATA%\ClipManager\</code> remains on disk until you delete that folder yourself.</p>
-
-      <h2>Children</h2>
-      <p>ClipManager isn't directed at children and doesn't knowingly collect information from anyone &mdash; it doesn't collect anything from anyone, since nothing leaves your device.</p>
-
-      <h2>Changes to this policy</h2>
-      <p>If this policy changes, we'll update the date at the top of this page.</p>
-
-      <h2>Contact</h2>
-      <p>Questions about this policy: <a href="mailto:dvvyomlabs19@zohomail.in">dvvyomlabs19@zohomail.in</a></p>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <span class="dim" style="font-size:0.9rem;">&copy; 2026 Dvvyom Labs</span>
-      <div>
-        <a href="../">ClipManager</a>
-        <a href="../support/">Support</a>
-      </div>
-    </div>
-  </footer>
-
+    <footer>
+      <span>© 2026 Dvvyom Labs</span>
+      <a href="mailto:dvvyomlabs19@zohomail.in">dvvyomlabs19@zohomail.in</a>
+    </footer>
+  </div>
 </body>
 </html>
-

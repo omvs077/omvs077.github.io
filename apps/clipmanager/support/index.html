@@ -1,79 +1,92 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Support &mdash; ClipManager</title>
-  <meta name="description" content="Get help with ClipManager: common questions, bug reports, and contact.">
-  <link rel="stylesheet" href="../../../style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ClipManager Support — Dvvyom Labs</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
+<style>
+  :root{
+    --bg:#f7f8fb; --surface:#ffffff; --text:#12172b; --muted:#5b6478;
+    --accent:#2b52d6; --border:#e6e9f2; --shadow:0 1px 2px rgba(18,23,43,.04), 0 8px 24px rgba(18,23,43,.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0d1120; --surface:#161b30; --text:#f2f4fb; --muted:#9aa2bd;
+      --accent:#6f8bff; --border:#262c48; --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;
+    padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); line-height:1.6;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:0 24px;}
+  header{padding:28px 0; display:flex; align-items:center; justify-content:space-between;}
+  .back{color:var(--muted); text-decoration:none; font-size:14px;}
+  .back:hover{color:var(--text);}
+  h1{font-size:26px; margin:8px 0 36px;}
+  .faq{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:20px 22px; margin-bottom:14px; box-shadow:var(--shadow);}
+  .faq h3{margin:0 0 8px; font-size:15.5px;}
+  .faq p{margin:0; color:var(--muted); font-size:14px;}
+  .code{font-family:ui-monospace,Consolas,monospace; font-size:13px; background:var(--bg); border:1px solid var(--border); border-radius:6px; padding:1px 6px;}
+  .contact{margin-top:36px; padding:22px; background:var(--surface); border:1px solid var(--border); border-radius:14px; text-align:center;}
+  .contact p{color:var(--muted); margin:0 0 6px; font-size:14px;}
+  .contact a{color:var(--accent); text-decoration:none; font-weight:600; font-size:14.5px;}
+  footer{border-top:1px solid var(--border); margin-top:56px; padding:28px 0 40px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;}
+  footer span, footer a{color:var(--muted); font-size:13px; text-decoration:none;}
+  footer a:hover{color:var(--text);}
+</style>
 </head>
 <body>
+  <div class="wrap">
+    <header>
+      <a class="back" href="/apps/clipmanager/">← ClipManager</a>
+      <nav><a class="back" href="/">Dvvyom Labs</a></nav>
+    </header>
 
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/">Dvvyom<span class="dot">.</span>Labs</a>
-      <nav class="site-nav">
-        <a href="../">ClipManager</a>
-        <a href="../privacy/">Privacy</a>
-      </nav>
+    <h1>Support</h1>
+
+    <div class="faq">
+      <h3>How do I open my clipboard history?</h3>
+      <p>Press <span class="code">Ctrl+Shift+V</span> anywhere in Windows. The history popup opens with your most recent clips at the top.</p>
     </div>
-  </header>
 
-  <section class="tight">
-    <div class="wrap">
-      <h1>Support</h1>
-      <p class="dim">Currently on version 1.1.1.</p>
-
-      <h2>Report a bug or request a feature</h2>
-      <p>Open an issue on GitHub &mdash; this is the fastest way to reach us: <a href="https://github.com/omvs077/ClipManager/issues" target="_blank" rel="noopener">github.com/omvs077/ClipManager/issues</a></p>
-
-      <h2>Contact directly</h2>
-      <p><a href="mailto:dvvyomlabs19@zohomail.in">dvvyomlabs19@zohomail.in</a></p>
-
-      <h2>Common questions</h2>
-      <div class="row-list">
-        <div class="row">
-          <div class="row-icon">?</div>
-          <div>
-            <h3>Where is my data stored?</h3>
-            <p>Locally, in <code>%APPDATA%\ClipManager\</code>. See the <a href="../privacy/">privacy policy</a> for details.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="row-icon">?</div>
-          <div>
-            <h3>Can I change the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> shortcut?</h3>
-            <p>Not in this version &mdash; it's fixed to avoid clashing with per-app shortcut customization. This may change in a future release.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="row-icon">?</div>
-          <div>
-            <h3>How do I remove my history?</h3>
-            <p>Open Settings from the tray icon &rarr; History tab &rarr; Clear All History.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="row-icon">?</div>
-          <div>
-            <h3>How do I uninstall it?</h3>
-            <p>If installed from the Microsoft Store: Start menu &rarr; right-click ClipManager &rarr; Uninstall. This also removes its local data.</p>
-          </div>
-        </div>
-      </div>
+    <div class="faq">
+      <h3>Where is my history stored?</h3>
+      <p>Entirely on your own machine, at <span class="code">%APPDATA%\ClipManager</span>. Nothing is uploaded anywhere — see the <a href="/apps/clipmanager/privacy/">privacy policy</a> for details.</p>
     </div>
-  </section>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <span class="dim" style="font-size:0.9rem;">&copy; 2026 Dvvyom Labs</span>
-      <div>
-        <a href="../">ClipManager</a>
-        <a href="../privacy/">Privacy</a>
-      </div>
+    <div class="faq">
+      <h3>Can I stop it from capturing something?</h3>
+      <p>Yes — pause monitoring from the tray icon at any time, or turn on password-manager exclusion in Settings → Privacy so those apps' clipboard content is never captured.</p>
     </div>
-  </footer>
 
+    <div class="faq">
+      <h3>How do I change how much history is kept?</h3>
+      <p>Open Settings → History to set your history limit, enable auto-delete, or turn on clear-on-exit.</p>
+    </div>
+
+    <div class="faq">
+      <h3>The tray icon disappeared / the app won't open.</h3>
+      <p>Check Task Manager for a running ClipManager.exe process. If it's not there, relaunch the app from the Start menu. If the issue persists, email us with your Windows version and we'll help track it down.</p>
+    </div>
+
+    <div class="faq">
+      <h3>How do I fully remove ClipManager and my data?</h3>
+      <p>Uninstall the app as usual, then delete the <span class="code">%APPDATA%\ClipManager</span> folder to remove your stored history and settings.</p>
+    </div>
+
+    <div class="contact">
+      <p>Didn't find what you needed?</p>
+      <a href="mailto:dvvyomlabs19@zohomail.in">dvvyomlabs19@zohomail.in</a>
+    </div>
+
+    <footer>
+      <span>© 2026 Dvvyom Labs</span>
+      <a href="mailto:dvvyomlabs19@zohomail.in">dvvyomlabs19@zohomail.in</a>
+    </footer>
+  </div>
 </body>
 </html>
-

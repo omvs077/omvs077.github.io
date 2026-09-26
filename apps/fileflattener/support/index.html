@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FileFlattener Support — Dvvyom Labs</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
+<style>
+  :root{
+    --bg:#f7f8fb; --surface:#ffffff; --text:#12172b; --muted:#5b6478;
+    --accent:#2b52d6; --border:#e6e9f2; --shadow:0 1px 2px rgba(18,23,43,.04), 0 8px 24px rgba(18,23,43,.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0d1120; --surface:#161b30; --text:#f2f4fb; --muted:#9aa2bd;
+      --accent:#6f8bff; --border:#262c48; --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;
+    padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); line-height:1.6;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:0 24px;}
+  header{padding:28px 0; display:flex; align-items:center; justify-content:space-between;}
+  .back{color:var(--muted); text-decoration:none; font-size:14px;}
+  .back:hover{color:var(--text);}
+  h1{font-size:26px; margin:8px 0 36px;}
+  .faq{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:20px 22px; margin-bottom:14px; box-shadow:var(--shadow);}
+  .faq h3{margin:0 0 8px; font-size:15.5px;}
+  .faq p{margin:0; color:var(--muted); font-size:14px;}
+  .code{font-family:ui-monospace,Consolas,monospace; font-size:13px; background:var(--bg); border:1px solid var(--border); border-radius:6px; padding:1px 6px;}
+  .contact{margin-top:36px; padding:22px; background:var(--surface); border:1px solid var(--border); border-radius:14px; text-align:center;}
+  .contact p{color:var(--muted); margin:0 0 6px; font-size:14px;}
+  .contact a{color:var(--accent); text-decoration:none; font-weight:600; font-size:14.5px;}
+  footer{border-top:1px solid var(--border); margin-top:56px; padding:28px 0 40px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;}
+  footer span, footer a{color:var(--muted); font-size:13px; text-decoration:none;}
+  footer a:hover{color:var(--text);}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="back" href="/apps/fileflattener/">← FileFlattener</a>
+      <nav><a class="back" href="/">Dvvyom Labs</a></nav>
+    </header>
+
+    <h1>Support</h1>
+
+    <div class="faq">
+      <h3>How do I export a folder?</h3>
+      <p>Pick a Root Folder and Save Target, choose a preset (or set your own filter rules), then click Scan followed by Flatten &amp; ZIP.</p>
+    </div>
+
+    <div class="faq">
+      <h3>How do exclude filters work?</h3>
+      <p>List patterns to skip — like <span class="code">.git, node_modules, build, *.log</span> — in Filter Rules before scanning. They're excluded from both the file tree and the exported ZIP.</p>
+    </div>
+
+    <div class="faq">
+      <h3>Is there a size limit?</h3>
+      <p>Yes — FileFlattener enforces a safe ceiling on scan/export size to prevent accidental oversized exports.</p>
+    </div>
+
+    <div class="faq">
+      <h3>What are the Folder Graph / Code Graph / Call Graph tabs?</h3>
+      <p>Visual views generated from your scan — folder structure, detected classes/functions (for recognized project types), and call relationships.</p>
+    </div>
+
+    <div class="faq">
+      <h3>Where are my settings stored?</h3>
+      <p>Locally, in the Windows registry under <span class="code">HKEY_CURRENT_USER\Software\FileFlattener</span> — just your 5 most recent folder paths and UI preferences. See the <a href="/apps/fileflattener/privacy/">privacy policy</a>.</p>
+    </div>
+
+    <div class="faq">
+      <h3>How do I fully remove FileFlattener and its settings?</h3>
+      <p>Uninstall the app, then remove the <span class="code">HKEY_CURRENT_USER\Software\FileFlattener</span> registry key if you want to clear its saved preferences too.</p>
+    </div>
+
+    <div class="contact">
+      <p>Didn't find what you needed?</p>
+      <a href="mailto:omvs077@gmail.com">omvs077@gmail.com</a>
+    </div>
+
+    <footer>
+      <span>© 2026 Dvvyom Labs</span>
+      <a href="mailto:omvs077@gmail.com">omvs077@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>

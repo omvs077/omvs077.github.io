@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FileFlattener Privacy Policy — Dvvyom Labs</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
+<style>
+  :root{
+    --bg:#f7f8fb; --surface:#ffffff; --text:#12172b; --muted:#5b6478;
+    --accent:#2b52d6; --border:#e6e9f2;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0d1120; --surface:#161b30; --text:#f2f4fb; --muted:#9aa2bd;
+      --accent:#6f8bff; --border:#262c48;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;
+    padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); line-height:1.65;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:0 24px;}
+  header{padding:28px 0; display:flex; align-items:center; justify-content:space-between;}
+  .back{color:var(--muted); text-decoration:none; font-size:14px;}
+  .back:hover{color:var(--text);}
+  h1{font-size:26px; margin:8px 0 4px;}
+  .updated{color:var(--muted); font-size:13px; margin:0 0 36px;}
+  h2{font-size:17px; margin:36px 0 10px;}
+  p, li{color:var(--muted); font-size:14.5px;}
+  ul{padding-left:20px; margin:0;}
+  li{margin-bottom:6px;}
+  .callout{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px 20px; margin-top:8px;}
+  .callout p{color:var(--text); margin:0; font-size:14.5px;}
+  footer{border-top:1px solid var(--border); margin-top:56px; padding:28px 0 40px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;}
+  footer span, footer a{color:var(--muted); font-size:13px; text-decoration:none;}
+  footer a:hover{color:var(--text);}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="back" href="/apps/fileflattener/">← FileFlattener</a>
+      <nav><a class="back" href="/">Dvvyom Labs</a></nav>
+    </header>
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">FileFlattener · Last updated: August 2026</p>
+
+    <div class="callout">
+      <p>FileFlattener does not collect, transmit, or store any personal data, usage analytics, or telemetry. It does not connect to the internet or any remote server during operation.</p>
+    </div>
+
+    <h2>Local data</h2>
+    <p>FileFlattener reads and writes files only within folders you explicitly select, for scanning, deduplication, and ZIP export. It stores one small local settings entry, via Windows QSettings under <code>HKEY_CURRENT_USER\Software\FileFlattener</code>, containing:</p>
+    <ul>
+      <li>Your 5 most recently opened project folder paths</li>
+      <li>Interface preferences</li>
+    </ul>
+    <p>This never leaves your device and is not accessible to Dvvyom Labs or anyone else.</p>
+
+    <h2>Third-party services</h2>
+    <p>FileFlattener does not integrate with any third-party analytics, advertising, or cloud services.</p>
+
+    <h2>Children's privacy</h2>
+    <p>FileFlattener does not knowingly collect data from anyone, including children, because it collects no data at all.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, an updated version will be published at this same URL with a revised "Last updated" date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:omvs077@gmail.com">omvs077@gmail.com</a><br>Repository: <a href="https://github.com/omvs077/FileFlattener">github.com/omvs077/FileFlattener</a></p>
+
+    <footer>
+      <span>© 2026 Dvvyom Labs</span>
+      <a href="mailto:omvs077@gmail.com">omvs077@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
